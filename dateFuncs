@@ -1,0 +1,7 @@
+function formatDate(date){
+  var a_month = ['Ene','Feb','Mar',
+					'Abr','May','Jun','Jul',
+					'Ago','Sep','Oct',
+					'Nov','Dic'];
+	return a_month[date];
+}
