@@ -1,0 +1,30 @@
+function isObject(arg) {
+  if (Object.prototype.toString.call(arg) === '[object Object]') {
+		return true;
+	}
+	return false;	
+}
+
+function isArray(arg) {
+	if (Object.prototype.toString.call(arg) === '[object Array]') {
+		return true;
+	}
+	return false;
+}
+
+function isDefined(varOrObj){
+	var ret = false;
+	if ((typeof(varOrObj) != "undefined") || (typeof(varOrObj) == "object")){
+		ret = true;
+	}
+	return ret;
+}
+
+function isEmpty(value) {
+    if ((typeof value == 'undefined') || value == null) {
+        return true;
+    } else if (typeof value == 'string') {
+        return value.match(/^\s*$/g) != null;
+    }
+    return false;
+}
