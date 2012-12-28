@@ -1,0 +1,3 @@
+function sExtractNumber(sNumero) {
+  return sNumero.replace(/[^\d]/g, '');
+}
