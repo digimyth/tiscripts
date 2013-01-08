@@ -1,3 +1,7 @@
 function sExtractNumber(sNumero) {
   return sNumero.replace(/[^\d]/g, '');
 }
+
+function sExtractNumberAndLetters(sText) {
+  return sText.replace( /^[a-zA-Z0-9]+$/, '');
+}
