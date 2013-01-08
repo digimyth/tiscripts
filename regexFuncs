@@ -3,5 +3,5 @@ function sExtractNumber(sNumero) {
 }
 
 function sExtractNumberAndLetters(sText) {
-  return sText.replace( /^[a-zA-Z0-9]+$/, '');
+  return sText.replace(/[^\w]/g, '');
 }
